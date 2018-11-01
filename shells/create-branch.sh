@@ -3,13 +3,13 @@
 current_dir=$(pwd)
 echo "current dir : $current_dir"
 
-workspace=~/codesquad/workspace
+workspace=~/nextstep/mission-workspace
 
 function clone_repository {
   cd $workspace
 
   if [ ! -d "$1" ]; then
-    git clone https://github.com/code-squad/$1.git
+    git clone https://github.com/next-step/$1.git
   fi
 }
 
